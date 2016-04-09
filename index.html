@@ -2,64 +2,111 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>XiaoYan Lin's Resume</title>
-	<link rel="stylesheet" type="text/css" href="jquery.pagepiling.css" />
-	<link rel="stylesheet" type="text/css" href="index.css" />
+	<title>林晓雁的简历</title>
+	<link rel="stylesheet" type="text/css" href="./vendor/jquery.pagepiling.css" />
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
 	<script src="http://cdn.bootcss.com/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.pagepiling.min.js"></script>
+  <script type="text/javascript" src="./vendor/jquery.pagepiling.min.js"></script>
 
 <script type="text/javascript">
   var deleteLog = false;
   $(document).ready(function() {
     $('#pagepiling').pagepiling({
       menu: '#menu',
-      anchors: ['home', 'about', 'work', 'skill', 'contact'],
+      anchors: ['home', 'about', 'skill', 'contact'],
       navigation: {
         'textColor': '#f2f2f2',
         'bulletsColor': '#ccc',
-        'tooltips': ['Home', 'About', 'Work', 'Skill', 'Contact']
+        'tooltips': ['Home', 'About', 'Skill', 'Contact']
       }
     });
   });
 </script>
 
 <style>
-#topbar {position:fixed; top:0; left:0; z-index:10; width:100%; height:50px; background:#000;}
-#menu {width:960px; height:50px; margin:0 auto;}
-#menu li {float:left; margin:0 20px; line-height:50px; font-size:1.25em;}
-#menu li a {color:#fff;}
-#menu li.active a, #menu li:hover a {color:#999;}
-#menu li:first-child {font-size:1.5em; font-weight:bold;}
-
-.section {text-align:center; background-size:cover;}
-#section1 {background-color:#0dfeff;}
-#section2 {background-color:#0ce854;}
-#section3 {background-color:#6eff00;}
-#section4 {background-color:#e8d70c;}
-#section5 {background-color:#ffae00;}
 
 </style>
 </head>
 <body>
   <div id="topbar">
     <ul id="menu">
-      <li data-menuanchor="home"><a href="#home">Resume</a></li>
+      <li data-menuanchor="home" class="active"><a href="#home">Resume</a></li>
       <li data-menuanchor="about"><a href="#about">个人简介</a></li>
-      <li data-menuanchor="work"><a href="#work">工作经历</a></li>
       <li data-menuanchor="skill"><a href="#skill">专业技能</a></li>
       <li data-menuanchor="contact"><a href="#contact">联系邮箱</a></li>
     </ul>
   </div>
 	<div id="pagepiling">
     <div class="section" id="section1">
+      <img src="./img/sweetyears.jpg"/>
+      <h1>林晓雁</h1>
+      <p>为成为一名<strong>前端工程师</strong>而努力ing</p>
     </div>
     <div class="section" id="section2">
+      <div class="content">
+        <div class="category experience">
+          <div class="category-title">工作经历</div>
+          <div class="item">
+            <span class="time">2015年9月 - 2015年12月</span><span class="location">同方计算机有限公司</span><span class="position">软件工程师</span>
+            <ul>
+              <li>主要负责基于<strong>海思平台</strong>海思平台的网络摄像机<strong>IPC</strong>的软件开发</li>
+            </ul>
+          </div>
+          <div class="item">
+            <span class="time">2013年9月 - 2015年8月</span><span class="location">华平信息技术股份有限公司</span><span class="position">软件工程师</span>
+            <ul>
+              <li><strong>SIP</strong>协议监控<strong>服务端</strong>开发</li>
+              <li>基于<strong>live555</strong>的流媒体服务端开发</li>
+            </ul>
+          </div>
+        </div>
+        <div class="category education">
+          <div class="category-title">教育背景</div>
+          <div class="item">
+            <span class="time">2011年9月 - 2013年7月</span><span class="location">北京大学软件与微电子学院</span><span class="position">第二学位</span>
+            <ul>
+              <li><strong>软件工程专业</strong>，在校期间获得过李彦宏奖学金</li>
+            </ul>
+          </div>
+          <div class="item">
+            <span class="time">2006年9月 - 2010年7月</span><span class="location">电子科技大学中山学院</span><span class="position">本科</span>
+            <ul>
+              <li>生物技术专业，在校期间通过<strong>CET-6</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="section" id="section3">
+      <ul>
+        <li>
+          <a href="#"><img src="./img/cpp.jpg" alt="c++"/></a>
+          <p>之前的工作都是使用<span>C/C++</span>进行开发</p>
+        </li>
+        <li>
+          <a href="http://linxiaoyan.github.io/xhtml-css2"><img src="./img/xhtml-css2.jpg" alt="xhtml-css2"/></a>
+          <p>有<span>xhtml+css2</span>整站开发的demo</p>
+        </li>
+        <li>
+          <a href="http://linxiaoyan.github.io/learning_javascript"><img src="./img/js.jpg" alt="javascript"/></a>
+          <p>用<span>JavaScript</span>实现了一些实例</p>
+        </li>
+        <li>
+          <a href="https://github.com/linxiaoyan/learning_html5-css3"><img src="./img/h5-css3.jpg" alt="h5-css3"/></a>
+          <p>对<span>HTML5</span>和<span>CSS3</span>有基本的了解</p>
+        </li>
+        <li>
+          <a href="https://github.com/linxiaoyan/learning_jquery"><img src="./img/jq.jpg" alt="jquery"/></a>
+          <p>看过<span>jQuery</span>部分源码，系统学习了其用法</p>
+        </li>
+        <li>
+          <a href="https://github.com/linxiaoyan/learning_augularjs"><img src="./img/aj.jpg" alt="angularjs"/></a>
+          <p>学习过<span>angularJS</span>的使用</p>
+        </li>
+      </ul>
     </div>
     <div class="section" id="section4">
-    </div>
-    <div class="section" id="section5">
+      <p><span>linxiaoyan87@foxmail.com</span></p>
     </div>
 	</div>
 </body>
