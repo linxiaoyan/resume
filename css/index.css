@@ -6,7 +6,7 @@ form,fieldset,input,textarea,p,blockquote,th,td,img,p {padding:0; margin:0;}
 ol,ul {list-style:none;}
 a {text-decoration:none;}
 img {border-style:none;}
-body {font-size:16px; font-family:Calibri, Arial, sans-serif; color:#fff;}
+body {font-family:Calibri, Arial, sans-serif; color:#fff;}
 
 h1 {font-size:5rem; font-weight:bold; text-shadow:3px 3px 1px #000;}
 h2 {font-size:4rem; text-shadow:3px 3px 1px #000;}
@@ -25,10 +25,10 @@ strong {font-size:2rem;}
 #menu li:first-child {font-size:1.5rem; font-weight:bold;}
 
 .section {text-align:center; background-color:#1593ff; background-size:cover;}
-.content {width:45rem; margin:4rem auto 0; text-align:left;}
+
 
 #section1 img {
-  width:8rem; height:8rem; border:0.5rem solid #0febff;
+  width:9rem; height:9rem; border:0.5rem solid #0febff;
   -webkit-border-radius:50%;
   -moz-border-radius:50%;
   -o-border-radius:50%;
@@ -38,14 +38,14 @@ strong {font-size:2rem;}
 #section1 p {margin-top:1.5rem;}
 #section1 strong {text-shadow:2px 2px 1px #000;}
 
-#section2 .category {}
-#section2 .category-title {
+#section2 .content {width:45rem; margin:4rem auto 0; text-align:left;}
+#section2 .title {
   width:10rem; height:2.5rem; margin-bottom:0.5rem;
   line-height:2.5rem; font-size:1.5rem; font-weight:bold; text-align:center;
   border-radius:4px;
 }
-.experience .category-title {background:#c4cb27;}
-.education .category-title {background:#21b080;}
+#section2 .exp-bg {background:#c4cb27;}
+#section2 .edu-bg {background:#21b080;}
 #section2 .item {margin-bottom:1rem; line-height:2rem;}
 #section2 .time {display:inline-block; width:13rem; font-size:1.1rem;}
 #section2 .location {display:inline-block; width:23rem; font-size:1.75rem; text-shadow:1px 1px 1px #000;}
@@ -65,5 +65,5 @@ strong {font-size:2rem;}
 
 
 #section4 p {font-size:2rem;}
-#section4 span {text-shadow:2px 2px 1px #000;}
+#section4 span {font-size:2rem; text-shadow:2px 2px 1px #000;}
 
